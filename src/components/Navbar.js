@@ -1,47 +1,27 @@
 import logo from "../images/logo.svg";
+import PageLinks from "./PageLinks";
 
 const Navbar = () => {
   return (
     <div>
-      <nav classname="navbar">
-        <div classname="nav-center">
-          <div classname="nav-header">
-            <img src={logo} classname="nav-logo" alt="backroads" />
-            <button type="button" classname="nav-toggle" id="nav-toggle">
-              <i classname="fas fa-bars" />
+      <nav className="navbar">
+        <div className="nav-center">
+          <div className="nav-header">
+            <img src={logo} className="nav-logo" alt="backroads" />
+            <button type="button" className="nav-toggle" id="nav-toggle">
+              <i className="fas fa-bars" />
             </button>
           </div>
-          <ul classname="nav-links" id="nav-links">
-            <li>
-              <a href="#home" classname="nav-link">
-                home
-              </a>
-            </li>
-            <li>
-              <a href="#about" classname="nav-link">
-                about
-              </a>
-            </li>
-            <li>
-              <a href="#services" classname="nav-link">
-                services
-              </a>
-            </li>
-            <li>
-              <a href="#tours" classname="nav-link">
-                tours
-              </a>
-            </li>
-          </ul>
-          <ul classname="nav-icons">
+          <PageLinks parentClass="nav-links" itemClass="nav-link" />
+          <ul className="nav-icons">
             <li>
               <a
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noreferrer"
-                classname="nav-icon"
+                className="nav-icon"
               >
-                <i classname="fab fa-facebook" />
+                <i className="fab fa-facebook" />
               </a>
             </li>
             <li>
@@ -49,9 +29,9 @@ const Navbar = () => {
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noreferrer"
-                classname="nav-icon"
+                className="nav-icon"
               >
-                <i classname="fab fa-twitter" />
+                <i className="fab fa-twitter" />
               </a>
             </li>
             <li>
@@ -59,9 +39,9 @@ const Navbar = () => {
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noreferrer"
-                classname="nav-icon"
+                className="nav-icon"
               >
-                <i classname="fab fa-squarespace" />
+                <i className="fab fa-squarespace" />
               </a>
             </li>
           </ul>
